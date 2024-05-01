@@ -204,122 +204,122 @@ function show_events(events, month, day) {
     }
 }
 
-// Checks if a specific date has any events
-//function check_events(day, month, year) {
-//    var events = [];
-//    for(var i=0; i<event_data["events"].length; i++) {
-//        var event = event_data["events"][i];
-//        if(event["day"]===day &&
-//            event["month"]===month &&
-//            event["year"]===year) {
-//                events.push(event);
-//            }
-//    }
-//    return events;
-//}
+ Checks if a specific date has any events
+function check_events(day, month, year) {
+    var events = [];
+    for(var i=0; i<event_data["events"].length; i++) {
+        var event = event_data["events"][i];
+        if(event["day"]===day &&
+            event["month"]===month &&
+            event["year"]===year) {
+                events.push(event);
+            }
+    }
+    return events;
+}
 
-// Given data for events in JSON format
-//var event_data = {
-//    "events": [
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//        {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10
-//    },
-//        {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10
-//    },
-//        {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10
-//    },
-//        {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10,
-//        "cancelled": true
-//    },
-//    {
-//        "occasion": " Repeated Test Event ",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 10
-//    },
-//    {
-//        "occasion": " Test Event",
-//        "invited_count": 120,
-//        "year": 2020,
-//        "month": 5,
-//        "day": 11
-//    }
-//    ]
-//};
+ Given data for events in JSON format
+var event_data = {
+    "events": [
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+        {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10
+    },
+        {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10
+    },
+        {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10
+    },
+        {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10,
+        "cancelled": true
+    },
+    {
+        "occasion": " Repeated Test Event ",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 10
+    },
+    {
+        "occasion": " Test Event",
+        "invited_count": 120,
+        "year": 2020,
+        "month": 5,
+        "day": 11
+    }
+    ]
+};
 
-//const months = [ 
-//    "January", 
-//    "February", 
-//    "March", 
-//    "April", 
-//    "May", 
-//    "June", 
-//    "July", 
-//    "August", 
-//    "September", 
-//    "October", 
-//    "November", 
-//    "December" 
-//];
+const months = [ 
+    "January", 
+    "February", 
+    "March", 
+    "April", 
+    "May", 
+    "June", 
+    "July", 
+    "August", 
+    "September", 
+    "October", 
+    "November", 
+    "December" 
+];
 
 })(jQuery);
